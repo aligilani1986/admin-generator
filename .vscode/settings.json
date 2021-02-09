@@ -1,0 +1,14 @@
+{
+  "emeraldwalk.runonsave": {
+    "commands": [
+      {
+        "match": ".*",
+        "cmd": "taskkill /IM \"node.exe\" /F"
+      },
+      {
+        "match": ".*",
+        "cmd": "taskkill /IM \"php.exe\" /F"
+      }
+    ]
+  }
+}

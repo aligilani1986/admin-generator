@@ -1,0 +1,55 @@
+{
+  "name": "aligilani1986/admin-generator",
+  "description": "Laravel 8 CRUD generator",
+  "keywords": [
+    "generator",
+    "make",
+    "crud",
+    "admin",
+    "cms",
+    "laravel"
+  ],
+  "license": "MIT",
+  "type": "project",
+  "authors": [
+    {
+      "name": "Ali Gilani",
+      "email": "info@ideveloper.info",
+      "homepage": "https://www.ideveloper.info",
+      "role": "Developer"
+    }
+  ],
+  "require": {
+    "php": "^7.2.5|^7.3.0|^8.0",
+    "illuminate/support": "^8.0",
+    "illuminate/console": "^8.0",
+    "doctrine/dbal": "^2.6.0",
+    "laravel/helpers": "~1.0"
+  },
+  "require-dev": {
+    "orchestra/testbench": "~6.0",
+    "mockery/mockery": "^1.0",
+    "phpunit/phpunit": "^9.0"
+  },
+  "autoload": {
+    "classmap": [],
+    "psr-4": {
+      "AliGilani\\AdminGenerator\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "AliGilani\\AdminGenerator\\Tests\\": "tests/"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "AliGilani\\AdminGenerator\\AdminGeneratorServiceProvider"
+      ]
+    },
+    "branch-alias": {
+      "dev-master": "6.0-dev"
+    }
+  }
+}
